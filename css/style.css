@@ -303,13 +303,50 @@ h1{
     /* display: none;  fer */
 }
 
-.sectionSpe1{
-    display: none;
-    position:absolute;
-    margin: -90rem 20rem;
-    justify-items: center;
-    z-index: 5;
+/* L'arriere plan le scroll plus */
+body.modal-open{
+  overflow: hidden;
 }
+
+
+/* OVERLAY plein écran */
+.sectionSpe1{
+  display: none;
+  position: fixed;
+  inset: 0;                 /* top:0 right:0 bottom:0 left:0 */
+  z-index: 9999;
+  background: rgba(0,0,0,0.65);
+  padding: 4rem 1.5rem;
+  overflow: auto;           /* scroll si contenu trop grand */
+}
+
+/* Affichage */
+.sectionSpe1.afficher{
+  display: block;
+}
+
+/* Contenu centré dans la modale */
+.sectionSpe1 .modal-content{
+  max-width: 1100px;
+  margin: 0 auto;
+  background: rgba(31,35,46,1);
+  border: 0.3rem solid rgba(2,237,219,1);
+  border-radius: 2rem;
+  padding: 2.5rem 2rem;
+  position: relative;
+}
+
+/* Croix (positionnée en haut à gauche du bloc) */
+.sectionSpe1 .croix{
+  width: 3.5rem;
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  cursor: pointer;
+  background: transparent;
+}
+
+
 .afficher{
     display:block ;
 }
@@ -335,6 +372,30 @@ h1{
 .textCompetences{
     justify-self: center;
 }
+
+
+
+
+.sectionSpe1 .competence-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+  align-items: center;
+}
+
+
+.sectionSpe1 .compartiment{
+  aspect-ratio: 7 / 15;
+  transform: scale(1.25);     
+  transition: transform 0.3s ease;
+}
+
+
+.sectionSpe1 .compartiment:hover{
+  transform: scale(1.32);
+}
+
 
 
 /* SECTION 4 */
