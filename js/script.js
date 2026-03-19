@@ -4,6 +4,7 @@ if (photo1) {
   photo1.classList.add("img1");
 }
 
+/* Gestion des modales compétences */
 for (let i = 1; i <= 6; i++) {
   const clic = document.getElementById(`clic${i}`);
   const modal = document.getElementById(`imageVisible${i}`);
@@ -22,8 +23,82 @@ for (let i = 1; i <= 6; i++) {
       document.body.classList.remove("modal-open");
     });
   }
+
+  if (modal) {
+    modal.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        modal.classList.remove("afficher");
+        document.body.classList.remove("modal-open");
+      }
+    });
+  }
 }
 
+/* Fermer la modale avec Echap */
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    document.querySelectorAll(".sectionSpe1.afficher").forEach((modal) => {
+      modal.classList.remove("afficher");
+    });
+    document.body.classList.remove("modal-open");
+  }
+});
+
+/* Apparition douce au scroll */
+const revealElements = document.querySelectorAll(
+  ".stats-section, #apropos, .competences, .experience-section, .synthese-section, .stack-section, #contact"
+);
+
+revealElements.forEach((element) => {
+  element.classList.add("reveal");
+});
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  {
+    threshold: 0.12,
+  }
+);
+
+revealElements.forEach((element) => {
+  observer.observe(element);
+});
+
+/* Mise en avant lien nav selon section visible */
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".navbar a");
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const currentId = entry.target.getAttribute("id");
+
+        navLinks.forEach((link) => {
+          const href = link.getAttribute("href");
+          link.classList.remove("active-nav");
+
+          if (href === `#${currentId}`) {
+            link.classList.add("active-nav");
+          }
+        });
+      }
+    });
+  },
+  {
+    threshold: 0.45,
+  }
+);
+
+sections.forEach((section) => {
+  sectionObserver.observe(section);
+});
 
 
 

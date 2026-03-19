@@ -1,441 +1,729 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Erica CORNET</title>
+    <meta name="description" content="Portfolio d'Erica Cornet - Développeuse informatique en BTS SIO SLAM, orientée développement web, projets applicatifs, systèmes, réseau et transformation digitale.">
+    <link rel="icon" href="assets/images/IMG-20241030-WA0003.jpg" type="image/jpg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-        <link rel="stylesheet" href="css/style.css">
+    <header class="fixer">
+        <div class="contLogo">
+            <img src="assets/images/IMG-20241030-WA0003.jpg" class="logo" alt="Logo du portfolio Erica Cornet">
+            <div><a href="#accueil" class="textLogo">Portfolio.</a></div>
+        </div>
 
-        <title>Portfolio Erica CORNET</title>
-        <link rel="icon" href="assets/images/IMG-20241030-WA0003.jpg" type="image/jpg">
-    </head>
-    <body>
-        <header class="fixer">
-            <div class="contLogo">
-                <img src="assets/images/IMG-20241030-WA0003.jpg" class="logo" alt="Logo du site">
-                <div><a href="#" class="textLogo">Portfolio.</a></div>
+        <nav class="navbar">
+            <a href="#accueil" class="coulTexte2">Accueil</a>
+            <a href="#apropos" class="coulTexte2">À propos</a>
+            <a href="#competences" class="coulTexte2">Compétences</a>
+            <a href="#experiences" class="coulTexte2">Expériences</a>
+            <a href="#synthese" class="coulTexte2">Synthèse BTS</a>
+            <a href="#contact" class="coulTexte2">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="section1" id="accueil">
+        <div class="text">
+            <div class="eyebrow">BTS SIO SLAM • Développement • Alternance</div>
+            <h3>Salut, moi c’est</h3>
+            <h1>Erica CORNET</h1>
+            <h3>Et je suis <span id="FrontEnd">développeus informatique</span></h3>
+
+            <p class="parag1">
+                Actuellement en alternance en tant que <strong>Conseiller Système d’Information / Développeur informatique</strong>
+                à la direction régionale Carrefour, j'occupe un poste en tant que cadre de niveau 7, je développe des solutions concrètes autour du web, de l’automatisation,
+                de l’environnement poste de travail et de l’accompagnement utilisateur, d'accompagnement des franchisés magasin. Mon objectif est de poursuivre dans
+                une trajectoire <strong>Full-Stack</strong> en construisant des applications utiles, fiables et bien pensées.
+            </p>
+
+            <div class="hero-tags">
+                <span>HTML / CSS / JavaScript</span>
+                <span>PHP / MySQL / API REST</span>
+                <span>Git / GitHub / MVC / CRUD</span>
+                <span>Linux / Windows / Réseau</span>
             </div>
 
-            <nav class="navbar">
-                <a href="#" class="coulTexte2">Accueil</a>
-                <a href="#" class="coulTexte2">A propos</a>
-                <a href="#" class="coulTexte2">Services</a>
-                <a href="#" class="coulTexte2">Portfolio</a>
-                <a href="#" class="coulTexte2">Contact</a>
-            </nav>
-        </header>
+            <div class="hero-actions">
+                <a href="assets/images/DEV_WEB_2026.pdf" download="DEV_WEB_2026.pdf" class="Btn1">Télécharger mon CV</a>
+                <a href="#competences" class="Btn2">Découvrir mes projets</a>
+            </div>
+        </div>
 
-        <!-- SECTION 1 -->
-        <section class="section1">
-            <div class="text">
-                <h3>Salut c'est moi</h3>
-                <h1>Erica CORNET</h1>
-                <h3>Et je suis développeur <span id="FrontEnd">Front-End</span></h3>
-                <p class="parag1">
-                    Actuellement en contrat d'apprentissage
-                    <strong><br>Conseiller Système d'Information et Développeur Informatique</strong><br>
-                    à la direction de Carrefour, j'ai pour vocation de devenir développeur Full-Stack.
+        <div class="img1cont">
+            <img src="assets/images/IMG-20241030-WA0003.jpg" id="imgcl" alt="Photo de profil Erica Cornet">
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <article class="stat-card">
+                <h3>Formation</h3>
+                <p>BTS SIO SLAM</p>
+                <span>Développement, API, base de données, cybersécurité, Linux</span>
+            </article>
+
+            <article class="stat-card">
+                <h3>Alternance actuelle</h3>
+                <p>Carrefour - CSI / Développeuse</p>
+                <span>Automatisation, sites web, support, projets nationaux</span>
+            </article>
+
+            <article class="stat-card">
+                <h3>Projet phare BTS</h3>
+                <p>Application de gestion de frais</p>
+                <span>Web + mobile, API REST PHP, MySQL, Android</span>
+            </article>
+
+            <article class="stat-card">
+                <h3>Objectif</h3>
+                <p>Devenir développeuse Full-Stack</p>
+                <span>Avec une forte base projet et une vraie culture terrain</span>
+            </article>
+        </div>
+    </section>
+
+    <!-- A PROPOS -->
+    <section id="apropos">
+        <div class="contenant">
+            <h2><span class="moi">À propos</span> de moi</h2>
+            <p class="section-lead">
+                Curieux, impliqué et orienté résultat, j’aime transformer une idée en solution concrète.
+                Mon portfolio reflète à la fois mon profil technique, ma progression en BTS SIO et ma capacité à évoluer
+                dans des contextes variés : développement, support, environnement système et projets d’entreprise.
+            </p>
+
+            <div class="diapo" style="--quantite: 10">
+                <h3>ME</h3>
+                <div class="image" style="--position: 1"><img src="assets/images/Me_1.jpg" alt="Photo personnelle 1"></div>
+                <div class="image" style="--position: 2"><img src="assets/images/carnaval_2.jpg" alt="Photo personnelle 2"></div>
+                <div class="image" style="--position: 3"><img src="assets/images/WWW_3.jpg" alt="Photo personnelle 3"></div>
+                <div class="image" style="--position: 4"><img src="assets/images/skier.jpg" alt="Photo personnelle 4"></div>
+                <div class="image" style="--position: 5"><img src="assets/images/piano.jpg" alt="Photo personnelle 5"></div>
+                <div class="image" style="--position: 6"><img src="assets/images/manhattan-3866140_1280.jpg" alt="Photo personnelle 6"></div>
+                <div class="image" style="--position: 7"><img src="assets/images/informatique_salle.jpg" alt="Photo personnelle 7"></div>
+                <div class="image" style="--position: 8"><img src="assets/images/foot.jpg" alt="Photo personnelle 8"></div>
+                <div class="image" style="--position: 9"><img src="assets/images/judo.jpg" alt="Photo personnelle 9"></div>
+                <div class="image" style="--position: 10"><img src="assets/images/livre.jpg" alt="Photo personnelle 10"></div>
+            </div>
+        </div>
+
+        <div class="previus">
+            <p class="presMoi">
+                J’ai une forte appétence pour l’informatique et tout particulièrement pour la construction d’interfaces,
+                le développement d’applications et la résolution de problèmes concrets. Mon parcours m’a permis de croiser
+                des sujets très différents : développement web, support utilisateur, réseau, déploiement poste de travail,
+                automatisation JavaScript à l'aide de l'IA, coordination terrain et montée en responsabilité. En parallèle, le sport et mes
+                centres d’intérêt m’ont appris la discipline, la rigueur, l’adaptabilité et l’esprit d’équipe.
+            </p>
+        </div>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section class="competences" id="competences">
+        <div id="sectCompetencesnone">
+            <h2 class="section-titre">Mes <span>Compétences</span></h2>
+            <p class="section-lead">
+                Cette section croise mes compétences techniques, mes réalisations concrètes et les preuves attendues dans le cadre du BTS SIO.
+                Chaque carte ouvre un détail plus complet de mes projets, méthodes et acquis.
+            </p>
+
+            <div class="competence-grid">
+                <div class="compartiment" id="clic1">
+                    <img src="assets/images/manhattan-3866140_1280.jpg" alt="Développement web">
+                    <div class="compartiment-info">
+                        <h3>Développement Web</h3>
+                        <p>
+                            HTML, CSS, JavaScript, PHP, MySQL<br>
+                            MVC, CRUD, responsive design<br>
+                            Conception de sites et d'interfaces
+                        </p>
+                    </div>
+                </div>
+
+                <div class="compartiment" id="clic2">
+                    <img src="assets/images/network-3866439_1280.jpg" alt="Projet BTS">
+                    <div class="compartiment-info">
+                        <h3>Projet BTS - Application</h3>
+                        <p>
+                            Gestion de frais web + mobile<br>
+                            API REST PHP, jeton, MySQL<br>
+                            Android Java / Volley
+                        </p>
+                    </div>
+                </div>
+
+                <div class="compartiment" id="clic3">
+                    <img src="assets/images/pexels-divinetechygirl-1181263.jpg" alt="Systèmes et réseaux">
+                    <div class="compartiment-info">
+                        <h3>Systèmes & Réseaux</h3>
+                        <p>
+                            Linux Debian, Windows, VM<br>
+                            Support, diagnostic, cybersécurité<br>
+                            Réseau et continuité de service
+                        </p>
+                    </div>
+                </div>
+
+                <div class="compartiment" id="clic4">
+                    <img src="assets/images/experience.jpg" alt="Expérience professionnelle">
+                    <div class="compartiment-info">
+                        <h3>Expérience Professionnelle</h3>
+                        <p>
+                            Carrefour, SNCF, Darty<br>
+                            Support, projets, automatisation<br>
+                            Coordination et accompagnement
+                        </p>
+                    </div>
+                </div>
+
+                <div class="compartiment" id="clic5">
+                    <img src="assets/images/photographie.jpg" alt="Gestion de projet et présence en ligne">
+                    <div class="compartiment-info">
+                        <h3>Gestion de Projet & Présence en ligne</h3>
+                        <p>
+                            Figma, portfolio, sites web<br>
+                            Tests, déploiement, valorisation<br>
+                            Organisation et suivi projet
+                        </p>
+                    </div>
+                </div>
+
+                <div class="compartiment" id="clic6">
+                    <img src="assets/images/video_ex.jpg" alt="Veille et professionnalisation">
+                    <div class="compartiment-info">
+                        <h3>Veille, RGPD & Professionnalisation</h3>
+                        <p>
+                            MOOC CNIL, veille technologique<br>
+                            Identité professionnelle<br>
+                            Progression continue
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCES -->
+    <section class="experience-section" id="experiences">
+        <h2 class="section-titre">Mes <span>expériences professionnelles</span></h2>
+        <p class="section-lead">
+            Mon parcours me permet d’articuler technique, terrain et sens du service. J’ai travaillé dans des environnements
+            variés, avec des niveaux de responsabilité croissants.
+        </p>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-date">Sept. 2024 - 2026</div>
+                <div class="timeline-content">
+                    <h3>Carrefour - CSI / Développeuse informatique</h3>
+                    <p>
+                        Installation et configuration de postes informatiques, automatisation de tâches en JavaScript,
+                        participation à des projets informatiques à échelle régionale et nationale, formation d’utilisateurs,
+                        encadrement d’un stagiaire et contribution à l’évolution du poste CSI. Contexte à forte responsabilité,
+                        avec poste cadre niveau 7. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">Déc. 2023 - Janv. 2024</div>
+                <div class="timeline-content">
+                    <h3>SNCF - Superviseur réseau télécom</h3>
+                    <p>
+                        Gestion du réseau, suivi des anomalies et pannes, coordination avec les techniciens et les équipes
+                        SNCF pour les travaux programmés. Expérience structurante en supervision, incidents et continuité de service.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">Mai 2023 - Août 2023</div>
+                <div class="timeline-content">
+                    <h3>Darty / Pôle service</h3>
+                    <p>
+                        SAV, réception produit, gestion caisse via AS400 et réparation de produits. Une expérience orientée
+                        service, rigueur opérationnelle et traitement de demandes utilisateurs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">Juil. 2022 - Août 2022</div>
+                <div class="timeline-content">
+                    <h3>Florian Informatique - Stage développement</h3>
+                    <p>
+                        Découverte de Next.js et installation de l’environnement de travail. Première immersion structurée
+                        dans un environnement de développement concret.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">Autres expériences</div>
+                <div class="timeline-content">
+                    <h3>Relation client, polyvalence et autonomie</h3>
+                    <p>
+                        Mes expériences en imprimerie, station nautique et contexte client SNCF ont renforcé ma capacité
+                        d’adaptation, mon sens du contact et mon autonomie, qui sont aujourd’hui de vrais atouts dans les
+                        projets informatiques.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SYNTHESE BTS -->
+    <section class="synthese-section" id="synthese">
+        <h2 class="section-titre">Fichier de <span>synthèse BTS SIO</span></h2>
+        <p class="section-lead">
+            Cette partie traduit directement les compétences du référentiel en réalisations concrètes. Elle permet de relier
+            mes projets, mon alternance et mes productions à des compétences clairement identifiables dans le tableau de synthèse.
+        </p>
+
+        <div class="synthese-grid">
+            <article class="synthese-card">
+                <h3>Développer la présence en ligne</h3>
+                <ul>
+                    <li>Création de ce portfolio en HTML, CSS et JavaScript</li>
+                    <li>Conception d’interfaces et maquettes avec Figma</li>
+                    <li>Création de sites web et valorisation de projets</li>
+                </ul>
+            </article>
+
+            <article class="synthese-card">
+                <h3>Répondre aux incidents et demandes</h3>
+                <ul>
+                    <li>Support utilisateurs et accompagnement chez Carrefour</li>
+                    <li>Traitement de besoins techniques et formation outils</li>
+                    <li>Expérience SAV, assistance et suivi de demandes</li>
+                </ul>
+            </article>
+
+            <article class="synthese-card">
+                <h3>Mettre à disposition un service</h3>
+                <ul>
+                    <li>Déploiement de postes et services informatiques</li>
+                    <li>Tests d’intégration de l’application de gestion de frais</li>
+                    <li>Connexion entre API, base de données et application mobile</li>
+                </ul>
+            </article>
+
+            <article class="synthese-card">
+                <h3>Travailler en mode projet</h3>
+                <ul>
+                    <li>Participation à des projets régionaux et nationaux Carrefour</li>
+                    <li>Organisation, coordination et suivi terrain</li>
+                    <li>Développement de solutions adaptées au besoin métier</li>
+                </ul>
+            </article>
+
+            <article class="synthese-card">
+                <h3>Gérer le patrimoine informatique</h3>
+                <ul>
+                    <li>Installation et configuration de postes</li>
+                    <li>Automatisation JavaScript / Google Sheets</li>
+                    <li>Structuration d’outils de suivi et remontée de données</li>
+                </ul>
+            </article>
+
+            <article class="synthese-card">
+                <h3>Organiser son développement professionnel</h3>
+                <ul>
+                    <li>Veille technologique et projet de synthèse</li>
+                    <li>Certification CNIL / MOOC RGPD</li>
+                    <li>Construction d’une identité professionnelle cohérente</li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="project-proof">
+            <article class="proof-card">
+                <h3>Projet applicatif - Gestion de frais</h3>
+                <p>
+                    Réalisation d’une application de gestion des frais avec une partie web et une partie mobile.
+                    Le projet mobilise API REST en PHP, système d’authentification par jeton, connexion Android
+                    en Java via Volley, base MySQL, gestion des droits et tests d’intégration.
                 </p>
-            </div>
-            <div class="img1cont">
-                <img src="assets/images/IMG-20241030-WA0003.jpg" id="imgcl" alt="Photo de profil">
-            </div>
-        </section>
+            </article>
 
-        <a
-            href="assets/images/DEV_WEB_2026.pdf"
-            download="DEV_WEB_2026.pdf"
-            class="Btn1">Mon CV</a>
-
-        <!-- SECTION 2 -->
-        <section>
-            <div class="contenant">
-                <h2><span class="moi">A propos</span> de moi</h2>
-                <div class="diapo" style="--quantité: 10">
-                    <h3>ME</h3>
-                    <div class="image" style="--position: 1"><img src="assets/images/Me_1.jpg" alt="Photo 1"></div>
-                    <div class="image" style="--position: 2"><img src="assets/images/carnaval_2.jpg" alt="Photo 2"></div>
-                    <div class="image" style="--position: 3"><img src="assets/images/WWW_3.jpg" alt="Photo 3"></div>
-                    <div class="image" style="--position: 4"><img src="assets/images/skier.jpg" alt="Photo 4"></div>
-                    <div class="image" style="--position: 5"><img src="assets/images/piano.jpg" alt="Photo 5"></div>
-                    <div class="image" style="--position: 6"><img src="assets/images/manhattan-3866140_1280.jpg" alt="Photo 6"></div>
-                    <div class="image" style="--position: 7"><img src="assets/images/informatique_salle.jpg" alt="Photo 7"></div>
-                    <div class="image" style="--position: 8"><img src="assets/images/foot.jpg" alt="Photo 8"></div>
-                    <div class="image" style="--position: 9"><img src="assets/images/judo.jpg" alt="Photo 9"></div>
-                    <div class="image" style="--position: 10"><img src="assets/images/livre.jpg" alt="Photo 10"></div>
-                </div>
-            </div>
-
-            <div class="previus">
-                <p class="presMoi">
-                    Ayant une forte appétence pour le développement informatique comme vous pouvez le constater
-                    avec ce PortFolio entièrement développé en HTML/CSS, JavaScript. De nature très curieux,
-                    je sors donc naturellement de ma zone de confort afin d'engranger un maximum d'expérience.
-                    Ainsi j'ai pu faire du judo à haut niveau et bien d'autres sports, j'ai été coach sport
-                    d'une équipe féminine de football, j'adore skier, je suis jovial et ainsi très ouverts aux personnes.
+            <article class="proof-card">
+                <h3>Alternance Carrefour - Mise en situation professionnelle</h3>
+                <p>
+                    L’alternance illustre très concrètement les compétences du référentiel : déploiement,
+                    automatisation, accompagnement utilisateur, organisation projet, évolution d’outils internes,
+                    traitement de problématiques métiers et transmission de connaissances.
                 </p>
-            </div>
-        </section>
-
-        <!-- Section 3 -->
-        <section class="competences">
-            <div id="sectCompetencesnone">
-                <h2 class="section-titre">Mes <span>Compétences</span></h2>
-                <div class="competence-grid">
-                    <div class="compartiment" id="clic1">
-                        <img src="assets/images/manhattan-3866140_1280.jpg" alt="Compétence 1">
-                        <div class="compartiment-info">
-                            <h3>Web Design</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="compartiment" id="clic2">
-                        <img src="assets/images/network-3866439_1280.jpg" alt="Compétence 2">
-                        <div class="compartiment-info">
-                            <h3>Développement Informatique</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="compartiment" id="clic3">
-                        <img src="assets/images/pexels-divinetechygirl-1181263.jpg" alt="Compétence 3">
-                        <div class="compartiment-info">
-                            <h3>UI/UX Design</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="compartiment" id="clic4">
-                        <img src="assets/images/experience.jpg" alt="Compétence 4">
-                        <div class="compartiment-info">
-                            <h3>Expérience</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="compartiment" id="clic5">
-                        <img src="assets/images/photographie.jpg" alt="Compétence 5">
-                        <div class="compartiment-info">
-                            <h3>Photographie</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="compartiment" id="clic6">
-                        <img src="assets/images/video_ex.jpg" alt="Compétence 6">
-                        <div class="compartiment-info">
-                            <h3>Vidéo</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION onClick pour les images -->
-        <div class="sectionSpe1" id="imageVisible1">
-            <div class="modal-content">
-                <img src="assets/images/croix.jpg" class="croix" id="croix1" alt="Fermer">
-                <h2>Maquettes figma & canva</h2>
-                <div class="textCompetences">
-                    <p class="paraInt">
-                        Voici les maquettes & design que j'ai pu créer au fil de mes différentes expériences.
-                        J'ai donc pu créer une maquette de location de véhicule de luxe en HTML/CSS JavaScript.
-                        Une maquette pour un site de restauration rapide ainsi qu'une maquette pour une création
-                        d'une station météo. Bien évidemment j'ai par la suite développé ces différentes maquettes.
-                    </p>
-                    <div class="competences">
-                        <div>
-                            <div class="competence-grid">
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette savitor.png" alt="Maquette location voiture de luxe">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Location Voiture de Luxe</p>
-                                    </div>
-                                </div>
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette voyage.png" alt="Maquette agence de voyage">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Agence de voyage</p>
-                                    </div>
-                                </div>
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette meteo.png" alt="Maquette station météo">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Station de Météo</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </article>
         </div>
+    </section>
 
-        <div class="sectionSpe1" id="imageVisible2">
-            <div class="modal-content">
-                <img src="assets/images/croix.jpg" class="croix" id="croix2" alt="Fermer">
-                <h2>Maquettes figma & canva</h2>
-                <div class="textCompetences">
-                    <p class="paraInt">
-                        Voici les maquettes & design que j'ai pu créer au fil de mes différentes expériences.
-                        J'ai donc pu créer une maquette de location de véhicule de luxe en HTML/CSS JavaScript.
-                        Une maquette pour un site de restauration rapide ainsi qu'une maquette pour une création
-                        d'une station météo. Bien évidemment j'ai par la suite développé ces différentes maquettes.
-                    </p>
-                    <div class="competences">
-                        <div>
-                            <div class="competence-grid">
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette savitor.png" alt="Maquette location voiture de luxe">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Location Voiture de Luxe</p>
-                                    </div>
-                                </div>
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette voyage.png" alt="Maquette agence de voyage">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Agence de voyage</p>
-                                    </div>
-                                </div>
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette meteo.png" alt="Maquette station météo">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Station de Météo</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- STACK -->
+    <section class="stack-section">
+        <h2 class="section-titre">Mon <span>environnement technique</span></h2>
+        <p class="section-lead">
+            Une base technique construite à la fois en formation, en projet et en entreprise.
+        </p>
+
+        <div class="stack-grid">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>Git / GitHub</span>
+            <span>API REST</span>
+            <span>MVC / CRUD</span>
+            <span>Android / Java</span>
+            <span>Linux Debian</span>
+            <span>Windows</span>
+            <span>Figma</span>
         </div>
+    </section>
 
-        <div class="sectionSpe1" id="imageVisible3">
-            <div class="modal-content">
-                <img src="assets/images/croix.jpg" class="croix" id="croix3" alt="Fermer">
-                <h2>Maquettes figma & canva</h2>
-                <div class="textCompetences">
-                    <p class="paraInt">
-                        Voici les maquettes & design que j'ai pu créer au fil de mes différentes expériences.
-                        J'ai donc pu créer une maquette de location de véhicule de luxe en HTML/CSS JavaScript.
-                        Une maquette pour un site de restauration rapide ainsi qu'une maquette pour une création
-                        d'une station météo. Bien évidemment j'ai par la suite développé ces différentes maquettes.
-                    </p>
-                    <div class="competences">
-                        <div>
-                            <div class="competence-grid">
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette savitor.png" alt="Maquette location voiture de luxe">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Location Voiture de Luxe</p>
-                                    </div>
-                                </div>
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette voyage.png" alt="Maquette agence de voyage">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Agence de voyage</p>
-                                    </div>
-                                </div>
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette meteo.png" alt="Maquette station météo">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Station de Météo</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- MODALE 1 -->
+    <div class="sectionSpe1" id="imageVisible1">
+        <div class="modal-content">
+            <img src="assets/images/croix.jpg" class="croix" id="croix1" alt="Fermer la modale">
+            <h2>Développement Web</h2>
 
-        <div class="sectionSpe1" id="imageVisible4">
-            <div class="modal-content">
-                <img src="assets/images/croix.jpg" class="croix" id="croix4" alt="Fermer">
-                <h2>Maquettes figma & canva</h2>
-                <div class="textCompetences">
-                    <p class="paraInt">
-                        Voici les maquettes & design que j'ai pu créer au fil de mes différentes expériences.
-                        J'ai donc pu créer une maquette de location de véhicule de luxe en HTML/CSS JavaScript.
-                        Une maquette pour un site de restauration rapide ainsi qu'une maquette pour une création
-                        d'une station météo. Bien évidemment j'ai par la suite développé ces différentes maquettes.
-                    </p>
-                    <div class="competences">
-                        <div>
-                            <div class="competence-grid">
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette savitor.png" alt="Maquette location voiture de luxe">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Location Voiture de Luxe</p>
-                                    </div>
-                                </div>
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette voyage.png" alt="Maquette agence de voyage">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Agence de voyage</p>
-                                    </div>
-                                </div>
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette meteo.png" alt="Maquette station météo">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Station de Météo</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="sectionSpe1" id="imageVisible5">
-            <div class="modal-content">
-                <img src="assets/images/croix.jpg" class="croix" id="croix5" alt="Fermer">
-                <h2>Maquettes figma & canva</h2>
-                <div class="textCompetences">
-                    <p class="paraInt">
-                        Voici les maquettes & design que j'ai pu créer au fil de mes différentes expériences.
-                        J'ai donc pu créer une maquette de location de véhicule de luxe en HTML/CSS JavaScript.
-                        Une maquette pour un site de restauration rapide ainsi qu'une maquette pour une création
-                        d'une station météo. Bien évidemment j'ai par la suite développé ces différentes maquettes.
-                    </p>
-                    <div class="competences">
-                        <div>
-                            <div class="competence-grid">
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette savitor.png" alt="Maquette location voiture de luxe">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Location Voiture de Luxe</p>
-                                    </div>
-                                </div>
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette voyage.png" alt="Maquette agence de voyage">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Agence de voyage</p>
-                                    </div>
-                                </div>
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette meteo.png" alt="Maquette station météo">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Station de Météo</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="sectionSpe1" id="imageVisible6">
-            <div class="modal-content">
-                <img src="assets/images/croix.jpg" class="croix" id="croix6" alt="Fermer">
-                <h2>Maquettes figma & canva</h2>
-                <div class="textCompetences">
-                    <p class="paraInt">
-                        Voici les maquettes & design que j'ai pu créer au fil de mes différentes expériences.
-                        J'ai donc pu créer une maquette de location de véhicule de luxe en HTML/CSS JavaScript.
-                        Une maquette pour un site de restauration rapide ainsi qu'une maquette pour une création
-                        d'une station météo. Bien évidemment j'ai par la suite développé ces différentes maquettes.
-                    </p>
-                    <div class="competences">
-                        <div>
-                            <div class="competence-grid">
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette savitor.png" alt="Maquette location voiture de luxe">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Location Voiture de Luxe</p>
-                                    </div>
-                                </div>
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette voyage.png" alt="Maquette agence de voyage">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Agence de voyage</p>
-                                    </div>
-                                </div>
-                                <div class="compartiment">
-                                    <img src="assets/images/maquette meteo.png" alt="Maquette station météo">
-                                    <div class="compartiment-info">
-                                        <p style="font-size: 0.5rem; text-align: center;">Maquette Station de Météo</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SECTION 4 -->
-        <section>
-            <div class="boite-centrale">
-                <form action="#" method="get" autocomplete="on" class="formulaire-contact">
-                    <h2 class="titre" style="color:rgb(2,237,219, 1)">Contactez-moi</h2>
-
-                    <div>
-                        <label for="prenom" class="texte-libre" style="color:rgb(2,237,219, 1)">Prénom<span class="obligatoire">*</span></label>
-                        <input class="champ-texte" id="prenom" type="text" required>
-                    </div>
-
-                    <div>
-                        <label for="nom" class="texte-libre" style="color:rgb(2,237,219, 1)">Nom<span class="obligatoire">*</span></label>
-                        <input class="champ-texte" id="nom" type="text" required>
-                    </div>
-
-                    <div>
-                        <label for="email" class="texte-libre" style="color:rgb(2,237,219, 1)">E-mail<span class="obligatoire">*</span></label>
-                        <input class="champ-texte" id="email" type="email" required>
-                    </div>
-
-                    <div class="groupe-select">
-                        <div style="flex: 1; margin-right: 10px;">
-                            <label for="projet" class="texte-libre" style="color:rgb(2,237,219, 1)">Type de projet<span class="obligatoire">*</span></label>
-                            <select class="champ-texte" id="projet" required>
-                                <option value="design">Web Design</option>
-                                <option value="developpement">Développement Web</option>
-                                <option value="photographie">Photographie</option>
-                                <option value="autre">Autre</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label for="message" class="texte-libre" style="color:rgb(2,237,219, 1)">Message</label>
-                        <textarea class="champ-texte" id="message" rows="5" placeholder="Décrivez votre projet ou question ici." required></textarea>
-                    </div>
-
-                    <button type="submit" class="bouton-envoyer">Envoyer</button>
-                    <button type="reset" class="bouton-reset">Réinitialiser</button>
-                </form>
-            </div>
-        </section>
-
-        <footer class="fixer">
-            <div class="contLogo">
-                <img src="assets/images/IMG-20241030-WA0003.jpg" class="logo" alt="Logo du site">
-                <div><a href="#" class="textLogo">Portfolio.</a></div>
-            </div>
-
-            <nav class="navbar">
-                <a href="#" class="coulTexte2">Accueil</a>
-                <a href="#" class="coulTexte2">À propos</a>
-                <a href="#" class="coulTexte2">Services</a>
-                <a href="#" class="coulTexte2">Portfolio</a>
-                <a href="#" class="coulTexte2">Contact</a>
-            </nav>
-
-            <div class="footer-info">
-                <p class="footer-text">© 2025 Portfolio. Tous droits réservés.</p>
-                <div class="social-links">
-                    <a href="#" class="social-icon">Facebook</a>
-                    <a href="#" class="social-icon">Twitter</a>
-                    <a href="#" class="social-icon">LinkedIn</a>
-                    <a href="#" class="social-icon">Instagram</a>
-                </div>
-                <p class="footer-text">
-                    <a href="#" class="footer-link">Politique de confidentialité</a> |
-                    <a href="#" class="footer-link">Conditions d'utilisation</a>
+            <div class="textCompetences">
+                <p class="paraInt">
+                    Le développement web constitue le cœur de mon profil. Pendant mon BTS SIO et mes projets personnels,
+                    j’ai développé des interfaces en HTML, CSS et JavaScript, conçu des pages dynamiques en PHP,
+                    manipulé des bases MySQL et appliqué les méthodes CRUD et MVC. Cette compétence s’exprime à travers
+                    mon portfolio, mes projets d’application et les travaux réalisés pendant ma formation.
                 </p>
-            </div>
-        </footer>
 
-        <script src="js/script.js"></script>
-    </body>
+                <div class="modal-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>Responsive</span>
+                </div>
+
+                <div class="mini-grid">
+                    <div class="mini-card">
+                        <h3>Front-end</h3>
+                        <p>Création d’interfaces claires, structurées, responsives et cohérentes avec un besoin utilisateur.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>Back-end</h3>
+                        <p>Manipulation de données, architecture PHP, échanges avec base MySQL et logique métier.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>Qualité</h3>
+                        <p>Organisation de code, lisibilité, amélioration progressive et validation fonctionnelle.</p>
+                    </div>
+                </div>
+
+                <div class="modal-gallery">
+                    <div class="gallery-card">
+                        <img src="assets/images/maquette savitor.png" alt="Projet maquette luxe">
+                        <p>Maquette et conception orientée expérience utilisateur</p>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="assets/images/maquette voyage.png" alt="Projet voyage">
+                        <p>Création d’interface web thématique</p>
+                    </div>
+                    <div class="gallery-card">
+                        <img src="assets/images/maquette meteo.png" alt="Projet météo">
+                        <p>Travail de structuration visuelle et développement</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE 2 -->
+    <div class="sectionSpe1" id="imageVisible2">
+        <div class="modal-content">
+            <img src="assets/images/croix.jpg" class="croix" id="croix2" alt="Fermer la modale">
+            <h2>Projet BTS - Application de gestion de frais</h2>
+
+            <div class="textCompetences">
+                <p class="paraInt">
+                    Ce projet est l’une de mes réalisations les plus représentatives dans le cadre du BTS SIO.
+                    J’y ai travaillé sur une application de gestion des frais avec une partie web et une partie mobile.
+                    Le projet comprend une API REST en PHP, un système d’authentification par jeton, une connexion à une base
+                    MySQL, ainsi qu’une communication avec une application Android développée en Java à l’aide de Volley.
+                    Il démontre ma capacité à relier front-end, back-end, données, sécurité et tests d’intégration.
+                </p>
+
+                <div class="modal-tags">
+                    <span>API REST</span>
+                    <span>PHP</span>
+                    <span>Jeton</span>
+                    <span>MySQL</span>
+                    <span>Android</span>
+                    <span>Volley</span>
+                </div>
+
+                <div class="mini-grid">
+                    <div class="mini-card">
+                        <h3>Architecture</h3>
+                        <p>Développement structuré avec logique applicative, gestion des utilisateurs et échange de données.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>Sécurité</h3>
+                        <p>Authentification, droits d’accès et prise en compte d’exigences minimales RGPD.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>Validation</h3>
+                        <p>Tests d’intégration entre API et applications clientes pour assurer le bon fonctionnement global.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE 3 -->
+    <div class="sectionSpe1" id="imageVisible3">
+        <div class="modal-content">
+            <img src="assets/images/croix.jpg" class="croix" id="croix3" alt="Fermer la modale">
+            <h2>Systèmes, réseaux et environnement technique</h2>
+
+            <div class="textCompetences">
+                <p class="paraInt">
+                    Mon parcours ne se limite pas au développement web. En formation et en entreprise, j’ai été amenée à
+                    configurer des machines virtuelles sous Debian, travailler dans des environnements Windows et Linux,
+                    aborder des notions de cybersécurité, intervenir sur des postes de travail et participer à des contextes
+                    où la continuité de service, la fiabilité et la bonne configuration de l’environnement sont essentielles.
+                </p>
+
+                <div class="modal-tags">
+                    <span>Linux Debian</span>
+                    <span>Windows</span>
+                    <span>Virtualisation</span>
+                    <span>Cybersécurité</span>
+                    <span>Support</span>
+                    <span>Réseau</span>
+                </div>
+
+                <div class="mini-grid">
+                    <div class="mini-card">
+                        <h3>Formation</h3>
+                        <p>Création de VM, bases réseau, environnement Linux et compréhension des enjeux de sécurité.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>SNCF</h3>
+                        <p>Supervision d’un réseau télécom, suivi d’incidents, coordination et traitement d’anomalies.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>Carrefour</h3>
+                        <p>Installation, déploiement, évolution de postes et accompagnement d’utilisateurs en contexte réel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE 4 -->
+    <div class="sectionSpe1" id="imageVisible4">
+        <div class="modal-content">
+            <img src="assets/images/croix.jpg" class="croix" id="croix4" alt="Fermer la modale">
+            <h2>Expérience professionnelle</h2>
+
+            <div class="textCompetences">
+                <p class="paraInt">
+                    Mes expériences professionnelles m’ont permis de relier la technique à la réalité du terrain.
+                    Chez Carrefour, j’interviens sur l’installation de postes, l’automatisation de tâches en JavaScript,
+                    la création de supports et sites, la transmission aux utilisateurs et la participation à des projets à
+                    échelle régionale et nationale. À la SNCF, j’ai découvert la supervision réseau et la gestion d’incidents.
+                    Chez Darty, j’ai renforcé mes réflexes de support, de rigueur et de traitement opérationnel.
+                </p>
+
+                <div class="modal-tags">
+                    <span>Carrefour</span>
+                    <span>SNCF</span>
+                    <span>Darty</span>
+                    <span>Support</span>
+                    <span>Coordination</span>
+                    <span>Autonomie</span>
+                </div>
+
+                <div class="mini-grid">
+                    <div class="mini-card">
+                        <h3>Responsabilité</h3>
+                        <p>Poste en alternance à responsabilité, participation à des projets structurants et pilotés.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>Relation utilisateur</h3>
+                        <p>Formation, accompagnement, transmission et adaptation au niveau de l’interlocuteur.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>Vision métier</h3>
+                        <p>Compréhension du besoin opérationnel, de l’impact terrain et de la logique d’entreprise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE 5 -->
+    <div class="sectionSpe1" id="imageVisible5">
+        <div class="modal-content">
+            <img src="assets/images/croix.jpg" class="croix" id="croix5" alt="Fermer la modale">
+            <h2>Gestion de projet & présence en ligne</h2>
+
+            <div class="textCompetences">
+                <p class="paraInt">
+                    Au-delà du code, je travaille aussi la manière de présenter et structurer un projet. Cela passe par
+                    la conception d’interfaces avec Figma, la création de sites web, le suivi des étapes de réalisation,
+                    la logique de test et de déploiement, ainsi que la mise en valeur de mon travail à travers ce portfolio.
+                    Cette dimension est directement liée à plusieurs compétences du tableau de synthèse BTS SIO.
+                </p>
+
+                <div class="modal-tags">
+                    <span>Figma</span>
+                    <span>Portfolio</span>
+                    <span>Maquettage</span>
+                    <span>Déploiement</span>
+                    <span>Tests</span>
+                    <span>Valorisation</span>
+                </div>
+
+                <div class="mini-grid">
+                    <div class="mini-card">
+                        <h3>Conception</h3>
+                        <p>Passage de l’idée à la maquette puis à une interface exploitable et cohérente.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>Organisation</h3>
+                        <p>Découpage du travail, priorisation, amélioration et adaptation selon les besoins.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>Image professionnelle</h3>
+                        <p>Présenter clairement ses projets, ses compétences et sa progression est déjà une compétence métier.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALE 6 -->
+    <div class="sectionSpe1" id="imageVisible6">
+        <div class="modal-content">
+            <img src="assets/images/croix.jpg" class="croix" id="croix6" alt="Fermer la modale">
+            <h2>Veille technologique, RGPD & développement professionnel</h2>
+
+            <div class="textCompetences">
+                <p class="paraInt">
+                    La progression d’un développeur ne repose pas seulement sur la production de code. Elle repose aussi
+                    sur la capacité à apprendre, à faire de la veille, à respecter un cadre réglementaire et à construire
+                    une identité professionnelle cohérente. Mon parcours intègre la certification CNIL, des bases RGPD,
+                    un travail de veille technologique et une attention particulière à la manière de relier technique,
+                    usage et sécurité.
+                </p>
+
+                <div class="modal-tags">
+                    <span>Veille</span>
+                    <span>RGPD</span>
+                    <span>CNIL</span>
+                    <span>Professionnalisation</span>
+                    <span>Curiosité</span>
+                    <span>Progression</span>
+                </div>
+
+                <div class="mini-grid">
+                    <div class="mini-card">
+                        <h3>Veille</h3>
+                        <p>Suivi des évolutions techniques et structuration de la réflexion autour de sujets numériques.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>Cadre juridique</h3>
+                        <p>Compréhension des fondamentaux de la protection des données et des enjeux de conformité.</p>
+                    </div>
+                    <div class="mini-card">
+                        <h3>Projection</h3>
+                        <p>Volonté de poursuivre dans le développement Full-Stack avec une base solide et crédible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="boite-centrale">
+            <form action="#" method="get" autocomplete="on" class="formulaire-contact">
+                <h2 class="titre">Contactez-moi</h2>
+
+                <div>
+                    <label for="prenom" class="texte-libre">Prénom <span class="obligatoire">*</span></label>
+                    <input class="champ-texte" id="prenom" type="text" required>
+                </div>
+
+                <div>
+                    <label for="nom" class="texte-libre">Nom <span class="obligatoire">*</span></label>
+                    <input class="champ-texte" id="nom" type="text" required>
+                </div>
+
+                <div>
+                    <label for="email" class="texte-libre">E-mail <span class="obligatoire">*</span></label>
+                    <input class="champ-texte" id="email" type="email" required>
+                </div>
+
+                <div class="groupe-select">
+                    <div class="select-wrap">
+                        <label for="projet" class="texte-libre">Type de projet <span class="obligatoire">*</span></label>
+                        <select class="champ-texte" id="projet" required>
+                            <option value="developpement">Développement Web</option>
+                            <option value="application">Application / API</option>
+                            <option value="support">Support / accompagnement</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="message" class="texte-libre">Message</label>
+                    <textarea class="champ-texte" id="message" rows="5" placeholder="Décrivez votre projet, votre besoin ou votre question." required></textarea>
+                </div>
+
+                <button type="submit" class="bouton-envoyer">Envoyer</button>
+                <button type="reset" class="bouton-reset">Réinitialiser</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="fixer">
+        <div class="contLogo">
+            <img src="assets/images/IMG-20241030-WA0003.jpg" class="logo" alt="Logo du portfolio">
+            <div><a href="#accueil" class="textLogo">Portfolio.</a></div>
+        </div>
+
+        <nav class="navbar">
+            <a href="#accueil" class="coulTexte2">Accueil</a>
+            <a href="#apropos" class="coulTexte2">À propos</a>
+            <a href="#competences" class="coulTexte2">Compétences</a>
+            <a href="#experiences" class="coulTexte2">Expériences</a>
+            <a href="#synthese" class="coulTexte2">Synthèse BTS</a>
+            <a href="#contact" class="coulTexte2">Contact</a>
+        </nav>
+
+        <div class="footer-info">
+            <p class="footer-text">© 2026 Portfolio Erica Cornet. Tous droits réservés.</p>
+
+            <div class="social-links">
+                <a href="#" class="social-icon">LinkedIn</a>
+                <a href="#" class="social-icon">GitHub</a>
+                <a href="mailto:erica.cornet.dev@gmail.com" class="social-icon">Email</a>
+            </div>
+
+            <p class="footer-text">
+                Développeuse informatique • BTS SIO SLAM • Portfolio professionnel
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
