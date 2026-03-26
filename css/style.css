@@ -1142,3 +1142,6 @@ footer .navbar{
     height: 2.6rem;
   }
 }
+.compartiment-info strong {
+    color: var(--accent);
+}
