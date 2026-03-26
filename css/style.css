@@ -380,7 +380,7 @@ header.fixer{
   box-shadow: var(--shadow);
 }
 
-/* COMPETENCES */
+/* PROJETS */
 
 .competences{
   min-height: auto;
@@ -414,7 +414,7 @@ header.fixer{
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(16,20,29,0.04), rgba(16,20,29,0.2) 35%, rgba(16,20,29,0.88) 100%);
+  background: linear-gradient(180deg, rgba(16,20,29,0.05), rgba(16,20,29,0.22) 32%, rgba(16,20,29,0.92) 100%);
   z-index: 1;
 }
 
@@ -443,13 +443,13 @@ header.fixer{
 
 .compartiment-info h3{
   color: var(--accent);
-  font-size: 1.28rem;
+  font-size: 1.24rem;
   margin-bottom: 0.45rem;
 }
 
 .compartiment-info p{
   color: #dee8f2;
-  font-size: 0.96rem;
+  font-size: 0.95rem;
   line-height: 1.45;
 }
 
@@ -755,6 +755,7 @@ body.modal-open{
   padding: 1rem;
   color: #eff6ff;
   text-align: center;
+  font-size: 0.95rem;
 }
 
 /* CONTACT */
@@ -1141,7 +1142,4 @@ footer .navbar{
     width: 2.6rem;
     height: 2.6rem;
   }
-}
-.compartiment-info strong {
-    color: var(--accent);
 }
