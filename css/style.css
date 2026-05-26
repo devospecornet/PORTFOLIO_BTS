@@ -1390,3 +1390,61 @@ footer .navbar{
     grid-template-columns: 1fr;
   }
 }
+
+/* Affichage rétractable de la veille technologique */
+.veille-hero-compact{
+  align-items: center;
+}
+
+.veille-title-button{
+  display: inline-block;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+}
+
+.veille-title-button .section-titre{
+  margin-bottom: 0;
+}
+
+.veille-title-button:hover .section-titre span{
+  text-decoration: underline;
+  text-underline-offset: 0.35rem;
+}
+
+.veille-summary{
+  margin-top: 0.9rem;
+  color: #e8eef7;
+  font-weight: 500;
+}
+
+.veille-toggle{
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.veille-complete{
+  display: none;
+}
+
+.veille-complete.open{
+  display: block;
+  animation: veilleFade 0.35s ease;
+}
+
+@keyframes veilleFade{
+  from{
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

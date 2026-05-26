@@ -180,3 +180,27 @@ croix6.addEventListener("click", function () {
   afficheContenu6.classList.remove("afficher");
 });
 */
+/* Ouverture / fermeture de la synthèse complète de la veille */
+const veilleComplete = document.getElementById("veille-complete");
+const veilleToggleButton = document.getElementById("veilleToggleButton");
+const veilleTitleToggle = document.getElementById("veilleTitleToggle");
+
+function toggleVeilleComplete() {
+  if (!veilleComplete || !veilleToggleButton || !veilleTitleToggle) return;
+
+  const isOpen = veilleComplete.classList.toggle("open");
+  veilleComplete.setAttribute("aria-hidden", String(!isOpen));
+  veilleToggleButton.setAttribute("aria-expanded", String(isOpen));
+  veilleTitleToggle.setAttribute("aria-expanded", String(isOpen));
+  veilleToggleButton.textContent = isOpen
+    ? "Réduire la synthèse de la veille"
+    : "Lire la synthèse de la veille";
+}
+
+if (veilleToggleButton) {
+  veilleToggleButton.addEventListener("click", toggleVeilleComplete);
+}
+
+if (veilleTitleToggle) {
+  veilleTitleToggle.addEventListener("click", toggleVeilleComplete);
+}
