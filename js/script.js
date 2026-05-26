@@ -46,7 +46,7 @@ document.addEventListener("keydown", function (event) {
 
 /* Apparition douce au scroll */
 const revealElements = document.querySelectorAll(
-  ".stats-section, #apropos, .competences, .experience-section, .synthese-section, .stack-section, #contact"
+  ".stats-section, #apropos, .competences, .experience-section, .synthese-section, .veille-section, .stack-section, #contact"
 );
 
 revealElements.forEach((element) => {

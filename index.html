@@ -22,6 +22,7 @@
             <a href="#competences" class="coulTexte2">Projets</a>
             <a href="#experiences" class="coulTexte2">Expériences</a>
             <a href="#synthese" class="coulTexte2">Synthèse BTS</a>
+            <a href="#veille" class="coulTexte2">Veille</a>
             <a href="#contact" class="coulTexte2">Contact</a>
         </nav>
     </header>
@@ -509,8 +510,12 @@
                 <p class="paraInt">
                     Ce portfolio est lui-même un projet. Il permet de présenter mes compétences,
                     mes expériences et mes réalisations de manière structurée. Il est complété par
-                    une veille technologique avec création d’articles de synthèse. 
+                    ma veille technologique sur la cryptographie post-quantique, un sujet de cybersécurité
+                    qui montre comment les développeurs doivent préparer les applications à l’arrivée
+                    progressive de l’ordinateur quantique.
                 </p>
+
+                <a href="#veille" class="Btn1">Accéder à ma veille technologique</a>
 
                 <div class="modal-tags">
                     <span>HTML</span>
@@ -518,6 +523,8 @@
                     <span>JavaScript</span>
                     <span>Bootstrap</span>
                     <span>Veille</span>
+                    <span>Cybersécurité</span>
+                    <span>Cryptographie post-quantique</span>
                     <span>Valorisation</span>
                 </div>
 
@@ -532,7 +539,7 @@
                     </article>
                     <article class="mini-card">
                         <h3>Ce que ça m’a apporté</h3>
-                        <p>Une meilleure capacité à présenter mon travail comme un développeur, et pas seulement comme un étudiant.</p>
+                        <p>Une meilleure capacité à présenter mon travail comme développeuse et à relier le développement applicatif aux enjeux de sécurité.</p>
                     </article>
                 </div>
 
@@ -701,6 +708,169 @@
         </div>
     </section>
 
+    <section class="veille-section" id="veille">
+        <div class="veille-hero">
+            <div>
+                <div class="eyebrow">Veille technologique • Cybersécurité • BTS SIO SLAM</div>
+                <h2 class="section-titre">La cryptographie <span>post-quantique</span></h2>
+                <p class="veille-intro">
+                    J’ai choisi de réaliser ma veille technologique sur la cryptographie post-quantique, car ce sujet représente un enjeu important pour l’avenir de la cybersécurité et du développement logiciel. Aujourd’hui, les applications utilisent énormément la cryptographie pour sécuriser les échanges, protéger les données, authentifier les utilisateurs ou signer des informations. Avec l’arrivée progressive de l’ordinateur quantique, certains algorithmes utilisés actuellement pourraient devenir vulnérables. Pour moi, ce sujet est donc directement lié au métier de développeuse, car il montre qu’une application doit être pensée pour rester sécurisée dans le temps.
+                </p>
+                <div class="veille-actions">
+                    <a href="#veille-problematique" class="Btn1">Voir la problématique</a>
+                    <a href="#veille-sources" class="Btn2">Voir mes sources</a>
+                </div>
+            </div>
+            <div class="veille-card veille-highlight">
+                <h3>Problématique</h3>
+                <p id="veille-problematique">
+                    Comment les développeurs doivent-ils préparer les applications à la transition vers la cryptographie post-quantique afin de protéger les données face aux futures capacités des ordinateurs quantiques ?
+                </p>
+            </div>
+        </div>
+
+        <div class="veille-grid-top">
+            <article class="veille-card">
+                <h3>Pourquoi ce sujet ?</h3>
+                <p>
+                    J’ai choisi ce sujet parce qu’il est à la fois actuel, technique et utile pour mon parcours en SLAM. Il ne concerne pas seulement les experts en cybersécurité : il concerne aussi les développeurs qui utilisent des bibliothèques, des API, des certificats, HTTPS, SSH ou encore des systèmes d’authentification.
+                </p>
+            </article>
+            <article class="veille-card">
+                <h3>Définition simple</h3>
+                <p>
+                    La cryptographie post-quantique désigne des méthodes de chiffrement conçues pour résister aux attaques possibles d’un ordinateur quantique. L’objectif est de continuer à protéger les données même si les machines quantiques deviennent assez puissantes pour casser certains algorithmes actuels.
+                </p>
+            </article>
+            <article class="veille-card">
+                <h3>Idée principale</h3>
+                <p>
+                    Un développeur ne doit pas inventer son propre algorithme de chiffrement. Son rôle est plutôt d’utiliser des solutions reconnues, de maintenir les dépendances à jour, de comprendre où la cryptographie est utilisée et de rendre l’application plus facile à adapter.
+                </p>
+            </article>
+        </div>
+
+        <div class="veille-timeline">
+            <article class="veille-step">
+                <span>01</span>
+                <div>
+                    <h3>La cryptographie est partout dans les applications</h3>
+                    <p>
+                        Quand j’utilise une application web, un espace de connexion, une API REST ou une application mobile, il y a souvent de la cryptographie derrière. Elle sert à protéger les échanges avec HTTPS, sécuriser les mots de passe, signer des jetons, gérer des certificats ou établir une connexion sécurisée avec un serveur.
+                    </p>
+                </div>
+            </article>
+            <article class="veille-step">
+                <span>02</span>
+                <div>
+                    <h3>L’ordinateur quantique change la menace</h3>
+                    <p>
+                        Les ordinateurs quantiques ne sont pas encore capables de casser massivement les protections actuelles, mais ils représentent une menace à anticiper. Les algorithmes asymétriques comme RSA ou ECC pourraient être fragilisés par des ordinateurs quantiques suffisamment puissants. C’est pour cela que les organismes de normalisation préparent déjà de nouveaux standards.
+                    </p>
+                </div>
+            </article>
+            <article class="veille-step">
+                <span>03</span>
+                <div>
+                    <h3>Le risque “Harvest now, decrypt later”</h3>
+                    <p>
+                        Un attaquant peut intercepter des données chiffrées aujourd’hui, les conserver, puis essayer de les déchiffrer plus tard quand la technologie quantique sera plus avancée. Ce risque est important pour les données sensibles qui doivent rester confidentielles pendant longtemps, comme des informations médicales, bancaires, administratives ou stratégiques.
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <div class="veille-standard-block">
+            <h3>Les standards importants à retenir</h3>
+            <p>
+                En août 2024, le NIST a publié trois standards officiels pour la cryptographie post-quantique. J’ai retenu ces trois noms car ils reviennent souvent dans les sources sérieuses sur le sujet.
+            </p>
+            <div class="standards-grid">
+                <article>
+                    <h4>ML-KEM</h4>
+                    <p>Utilisé pour l’échange ou l’encapsulation de clés. Il sert à établir un secret partagé entre deux parties.</p>
+                </article>
+                <article>
+                    <h4>ML-DSA</h4>
+                    <p>Utilisé pour les signatures numériques. Il permet de vérifier l’authenticité et l’intégrité d’une information.</p>
+                </article>
+                <article>
+                    <h4>SLH-DSA</h4>
+                    <p>Utilisé aussi pour les signatures numériques, avec une approche basée sur les fonctions de hachage.</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="veille-two-columns">
+            <article class="veille-card">
+                <h3>Ce que cela change pour un développeur</h3>
+                <ul>
+                    <li>Identifier les endroits où l’application utilise de la cryptographie.</li>
+                    <li>Éviter de coder soi-même un algorithme de chiffrement.</li>
+                    <li>Utiliser des bibliothèques fiables, maintenues et reconnues.</li>
+                    <li>Mettre à jour les dépendances, les serveurs et les protocoles.</li>
+                    <li>Prévoir une architecture capable de changer d’algorithme.</li>
+                    <li>Tester la compatibilité avec les nouveaux standards.</li>
+                </ul>
+            </article>
+            <article class="veille-card">
+                <h3>La crypto-agilité</h3>
+                <p>
+                    La notion la plus importante que j’ai retenue est la crypto-agilité. Cela signifie qu’une application doit pouvoir changer d’algorithme cryptographique sans devoir être complètement réécrite. Par exemple, au lieu de dépendre directement d’un algorithme précis comme RSA, il est préférable d’utiliser une couche d’abstraction ou une bibliothèque qui permettra d’évoluer plus facilement vers des mécanismes post-quantiques.
+                </p>
+            </article>
+        </div>
+
+        <div class="veille-usecase">
+            <h3>Exemple concret dans une application web</h3>
+            <p>
+                Dans une application de gestion de frais comme mon projet GSB, plusieurs éléments doivent être sécurisés : la connexion utilisateur, les échanges entre le front-end, l’API REST et la base de données, les sessions, les jetons, les mots de passe et les droits d’accès. Aujourd’hui, ces échanges reposent principalement sur des technologies classiques comme HTTPS, TLS, les certificats et les bibliothèques de sécurité. Dans une logique post-quantique, je devrais vérifier que les composants utilisés peuvent être mis à jour, que les dépendances ne sont pas obsolètes et que l’application reste maintenable si les standards de sécurité évoluent.
+            </p>
+            <div class="veille-schema">
+                <div>Utilisateur</div>
+                <span>HTTPS / TLS</span>
+                <div>Application web</div>
+                <span>API REST</span>
+                <div>Base de données</div>
+            </div>
+        </div>
+
+        <div class="veille-two-columns">
+            <article class="veille-card">
+                <h3>Ma méthode de veille</h3>
+                <p>
+                    Pour suivre ce sujet, je consulte principalement des sources officielles comme le NIST et l’ANSSI, car ce sont des organismes reconnus dans le domaine de la cybersécurité. Je m’intéresse aussi aux articles qui expliquent la transition post-quantique dans des protocoles utilisés en entreprise comme TLS, SSH ou IPsec. Mon objectif est de comprendre les impacts concrets pour le développement, sans entrer dans des calculs mathématiques trop complexes.
+                </p>
+            </article>
+            <article class="veille-card">
+                <h3>Ce que cette veille m’apporte</h3>
+                <p>
+                    Cette veille me permet de mieux comprendre que la sécurité d’une application ne se limite pas au code visible. Elle dépend aussi des protocoles, des bibliothèques, des certificats, des standards et des mises à jour. En tant que future développeuse, cela me pousse à écrire du code plus propre, plus maintenable et plus adaptable aux évolutions technologiques.
+                </p>
+            </article>
+        </div>
+
+        <div class="veille-conclusion">
+            <h3>Conclusion</h3>
+            <p>
+                Pour conclure, la cryptographie post-quantique est un sujet important car elle prépare la cybersécurité aux futures capacités des ordinateurs quantiques. Même si cette transition est progressive, elle doit être anticipée dès maintenant. Le développeur a un rôle essentiel : il doit créer des applications capables d’évoluer, utiliser des solutions fiables, suivre les recommandations officielles et éviter les choix techniques bloquants. Ce sujet montre que le métier de développeur ne consiste pas seulement à créer des fonctionnalités, mais aussi à garantir la sécurité et la durabilité des applications.
+            </p>
+        </div>
+
+        <div class="veille-sources" id="veille-sources">
+            <h3>Sources de ma veille</h3>
+            <div class="sources-grid">
+                <a href="https://csrc.nist.gov/projects/post-quantum-cryptography" target="_blank">NIST — Post-Quantum Cryptography Project</a>
+                <a href="https://csrc.nist.gov/pubs/fips/203/final" target="_blank">NIST — FIPS 203, ML-KEM</a>
+                <a href="https://csrc.nist.gov/pubs/fips/204/final" target="_blank">NIST — FIPS 204, ML-DSA</a>
+                <a href="https://cyber.gouv.fr/enjeux-technologiques/cryptographie-post-quantique/" target="_blank">ANSSI — Cryptographie post-quantique</a>
+                <a href="https://messervices.cyber.gouv.fr/documents-guides/transition_post_quantique_tls_1_3.pdf" target="_blank">ANSSI — Transition post-quantique de TLS 1.3</a>
+                <a href="https://messervices.cyber.gouv.fr/guides/Transition-post-quantique-protocole-SSHv2" target="_blank">ANSSI — Transition post-quantique de SSHv2</a>
+            </div>
+        </div>
+    </section>
+
+
     <!-- STACK -->
     <section class="stack-section">
         <h2 class="section-titre">Mon <span>environnement technique</span></h2>
@@ -780,6 +950,7 @@
             <a href="#competences" class="coulTexte2">Projets</a>
             <a href="#experiences" class="coulTexte2">Expériences</a>
             <a href="#synthese" class="coulTexte2">Synthèse BTS</a>
+            <a href="#veille" class="coulTexte2">Veille</a>
             <a href="#contact" class="coulTexte2">Contact</a>
         </nav>
 
